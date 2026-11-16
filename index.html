@@ -753,170 +753,64 @@ body { display: block; margin: 0; overflow: hidden; background: #f5f7fa; color: 
 
 </style>
 <style data-source="assets/configuration-element-plus.css">
-/* Configuration tool: shared Element Plus controls, scoped to this view. */
-.cfg-shell {
-  display: grid;
-  grid-template-columns: 190px minmax(0, 1fr);
-  align-items: stretch;
-  min-width: 0;
-  min-height: 100%;
-  color: #303133;
-  background: #f7f9fc;
-}
-
-.cfg-shell .cfg-sidebar {
-  min-width: 0;
-  padding: 19px 10px;
-  border-right: 1px solid #e4e7ed;
-  background: #fff;
-}
-.cfg-shell .cfg-sidebar-title {
-  padding: 0 9px 12px;
-  color: #909399;
-  font-size: 12px;
-  font-weight: 600;
-}
-.cfg-shell .cfg-nav.el-menu { border-right: 0; }
-.cfg-shell .cfg-nav .el-menu-item {
-  height: 40px;
-  margin-bottom: 3px;
-  padding: 0 11px !important;
-  border-radius: 7px;
-  line-height: 40px;
-}
-.cfg-shell .cfg-nav .el-menu-item.is-active {
-  color: var(--el-color-primary);
-  background: var(--el-color-primary-light-9);
-  font-weight: 600;
-}
-
-.cfg-shell .cfg-main,
-.cfg-shell .cfg-main.el-main {
-  min-width: 0;
-  padding: 19px 22px 24px;
-  overflow: visible;
-}
-.cfg-shell .cfg-main-head {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px 14px;
-  margin-bottom: 13px;
-}
-.cfg-shell .cfg-main-title { margin: 0; color: #263445; font-size: 19px; line-height: 1.4; }
-.cfg-shell .cfg-main-copy { margin-top: 3px; color: #667085; font-size: 12px; line-height: 1.6; }
-.cfg-shell .cfg-header-tags { display: flex; flex-wrap: wrap; align-items: center; gap: 6px; }
-.cfg-shell .cfg-alert.el-alert { margin-bottom: 12px; }
-.cfg-shell .cfg-alert .el-alert__content { min-width: 0; }
-.cfg-shell .cfg-alert .el-alert__title { line-height: 1.55; }
-
-.cfg-shell .cfg-cards { display: grid; gap: 11px; min-width: 0; }
-.cfg-shell .cfg-card.el-card {
-  --el-card-padding: 15px;
-  --el-card-border-color: #e1e7ef;
-  border-radius: 9px;
-  box-shadow: 0 3px 12px #1f293708;
-}
-.cfg-shell .cfg-card-heading {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: flex-start;
-  justify-content: space-between;
-  gap: 10px 16px;
-}
-.cfg-shell .cfg-card-title { color: #263445; font-size: 14px; font-weight: 650; line-height: 1.45; }
-.cfg-shell .cfg-card-desc { max-width: 720px; margin-top: 3px; color: #667085; font-size: 12px; line-height: 1.6; }
-.cfg-shell .cfg-card-control { min-width: min(100%, 200px); max-width: 100%; }
-.cfg-shell .cfg-card-control .el-select,
-.cfg-shell .cfg-card-control .el-input { width: 100%; }
-.cfg-shell .cfg-card-meta {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 6px 14px;
-  margin-top: 11px;
-  color: #667085;
-  font-size: 11px;
-  line-height: 1.5;
-}
-.cfg-shell .cfg-card-actions,
-.cfg-shell .cfg-action-row {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 8px;
-}
-.cfg-shell .cfg-card-actions .el-button + .el-button,
-.cfg-shell .cfg-action-row .el-button + .el-button { margin-left: 0; }
-
-.cfg-shell .cfg-status-row,
-.cfg-shell .cfg-status-list {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 7px 12px;
-  margin-top: 10px;
-}
-.cfg-shell .cfg-status-item { display: inline-flex; flex-wrap: wrap; align-items: center; gap: 5px; color: #667085; font-size: 12px; }
-.cfg-shell .cfg-status-banner {
-  margin-top: 11px;
-  padding: 8px 10px;
-  border: 1px solid #e4eaf2;
-  border-radius: 6px;
-  background: #f7f9fc;
-  color: #606266;
-  font-size: 12px;
-  line-height: 1.55;
-}
-.cfg-shell .cfg-readonly-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(175px, 1fr)); gap: 9px; }
-.cfg-shell .cfg-file-row { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; min-width: 0; }
-.cfg-shell .cfg-file-row .el-input { flex: 1 1 180px; min-width: 0; }
-.cfg-shell .cfg-empty { padding: 18px 8px; color: #909399; font-size: 12px; }
-.cfg-shell .cfg-table { width: 100%; margin-top: 10px; }
-.cfg-shell .cfg-metadata { margin-top: 12px; }
-.cfg-shell .cfg-metadata .el-descriptions__label { width: 106px; }
-
-.cfg-shell .cfg-steps {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 6px;
-  margin: 12px 0;
-}
-.cfg-shell .cfg-step {
-  padding: 4px 8px;
-  border: 1px solid #e4e7ed;
-  border-radius: 5px;
-  background: #fff;
-  color: #606266;
-  font-size: 11px;
-}
-.cfg-shell .cfg-footer {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  justify-content: space-between;
-  gap: 10px;
-  margin-top: 15px;
-  padding: 12px 0 0;
-  border-top: 1px solid #e4e7ed;
-  color: #667085;
-  font-size: 12px;
-}
-
-@media (max-width: 900px) {
-  .cfg-shell { grid-template-columns: 165px minmax(0, 1fr); }
-  .cfg-shell .cfg-main, .cfg-shell .cfg-main.el-main { padding: 17px; }
-}
-@media (max-width: 640px) {
-  .cfg-shell { display: block; }
-  .cfg-shell .cfg-sidebar { padding: 10px 12px; border-right: 0; border-bottom: 1px solid #e4e7ed; }
-  .cfg-shell .cfg-sidebar-title { padding: 0 2px 6px; }
-  .cfg-shell .cfg-nav.el-menu { display: flex; flex-wrap: nowrap; gap: 4px; overflow-x: auto; overflow-y: hidden; }
-  .cfg-shell .cfg-nav .el-menu-item { flex: 0 0 auto; height: 34px; margin: 0; line-height: 34px; }
-  .cfg-shell .cfg-main, .cfg-shell .cfg-main.el-main { padding: 14px; }
-  .cfg-shell .cfg-card-control { flex: 1 1 100%; }
-}
+/* System configuration: category navigation and content cards as in the review reference. */
+.cfg-shell{display:grid;grid-template-columns:190px minmax(0,1fr);align-items:stretch;min-width:0;min-height:100%;color:#303133;background:#fff}
+.cfg-shell .cfg-sidebar{min-width:0;padding:20px 12px;border-right:1px solid #e4e7ed;background:#fff}
+.cfg-shell .cfg-sidebar-title{padding:0 8px 13px}
+.cfg-shell .cfg-sidebar-title h2{margin:0;font-size:17px;line-height:1.4;color:#253046}
+.cfg-shell .cfg-sidebar-title p{margin:4px 0 0;font-size:11px;line-height:1.5;color:#909399}
+.cfg-shell .cfg-nav.el-menu{border:0}
+.cfg-shell .cfg-nav .el-menu-item{height:39px;margin:2px 0;padding:0 10px!important;border-radius:6px;line-height:39px;font-size:13px}
+.cfg-shell .cfg-nav .el-menu-item.is-active{color:#6744ba;background:#f1eaff;font-weight:600}
+.cfg-shell .cfg-nav-icon{display:inline-block;width:24px;color:#727a8c;font-size:15px}
+.cfg-shell .cfg-nav .is-active .cfg-nav-icon{color:#7951c7}
+.cfg-shell .cfg-main{min-width:0;padding:22px 24px 26px;background:#f9fafc}
+.cfg-shell .cfg-main-head{display:flex;align-items:flex-start;justify-content:space-between;gap:14px;margin-bottom:13px}
+.cfg-shell .cfg-main-head h2{margin:0;color:#242e40;font-size:19px;line-height:1.4}
+.cfg-shell .cfg-main-head p{margin:4px 0 0;color:#8790a0;font-size:12px;line-height:1.5}
+.cfg-shell .cfg-prototype-note{margin:0 0 13px;color:#8790a0;font-size:11px;line-height:1.6}
+.cfg-shell .cfg-alert{margin:0 0 12px}
+.cfg-shell .cfg-card-list{display:grid;gap:10px}
+.cfg-shell .cfg-card{min-width:0;padding:14px 15px;border:1px solid #e4e8ef;border-radius:8px;background:#fff}
+.cfg-shell .cfg-card-content{display:flex;align-items:flex-start;gap:12px;min-width:0}
+.cfg-shell .cfg-icon{display:grid;place-items:center;flex:0 0 30px;width:30px;height:30px;border-radius:7px;background:#f2eafd;color:#7950c6;font-size:16px;font-weight:600}
+.cfg-shell .cfg-card-body{min-width:0;flex:1}
+.cfg-shell .cfg-card-heading h3{margin:0;color:#263141;font-size:14px;line-height:1.5;font-weight:650}
+.cfg-shell .cfg-card-heading p,.cfg-shell .cfg-field-label p{margin:3px 0 0;color:#9099a7;font-size:11px;line-height:1.55}
+.cfg-shell .cfg-field{display:grid;grid-template-columns:minmax(140px,1fr) minmax(155px,230px);align-items:center;gap:5px 18px;padding:8px 0;border-bottom:1px solid #f1f2f5}
+.cfg-shell .cfg-field:last-of-type{border-bottom:0}
+.cfg-shell .cfg-field-solo{margin-top:-34px;padding:0 0 0;min-height:37px;border:0}
+.cfg-shell .cfg-field-solo .cfg-field-label{padding-top:30px}
+.cfg-shell .cfg-field-label{min-width:0}
+.cfg-shell .cfg-field-label strong{display:block;color:#444d5c;font-size:12px;font-weight:550}
+.cfg-shell .cfg-field-hint{grid-column:2;color:#9aa1ae;font-size:11px;line-height:1.5}
+.cfg-shell .cfg-control{min-width:0}
+.cfg-shell .cfg-control .el-select,.cfg-shell .cfg-control .el-input{width:100%}
+.cfg-shell .cfg-control .el-radio-group{justify-content:flex-end;display:flex;flex-wrap:wrap}
+.cfg-shell .cfg-pending{display:inline-block;color:#9aa2ad;font-size:12px}
+.cfg-shell .cfg-file-control{display:flex;justify-content:flex-end;align-items:center;gap:6px;min-width:0}
+.cfg-shell .cfg-file-name{min-width:0;overflow:hidden;text-overflow:ellipsis;white-space:nowrap;color:#8b93a0;font-size:11px}
+.cfg-shell .cfg-file-control .el-button+.el-button{margin-left:0}
+.cfg-shell .cfg-tip{margin-top:9px;padding:8px 10px;border-radius:5px;background:#f5f0fc;color:#755a9e;font-size:11px;line-height:1.55}
+.cfg-shell .cfg-footer{display:flex;align-items:center;justify-content:space-between;gap:10px;margin-top:17px;color:#9099a7;font-size:11px}
+.cfg-shell .cfg-footer-actions,.cfg-shell .cfg-next-actions{display:flex;align-items:center;flex-wrap:wrap;gap:7px}
+.cfg-shell .cfg-footer-actions .el-button+.el-button,.cfg-shell .cfg-next-actions .el-button+.el-button{margin-left:0}
+.cfg-shell .cfg-next-actions{margin-top:12px;color:#9aa2ad;font-size:11px}
+.cfg-shell .cfg-service-summary{display:flex;align-items:center;gap:12px;padding:11px 13px;border:1px solid #e4e8ef;border-radius:8px;background:#fff}
+.cfg-shell .cfg-service-summary strong{white-space:nowrap;font-size:13px}
+.cfg-shell .cfg-service-summary .el-button{margin-left:auto}
+.cfg-shell .cfg-service-counts{display:flex;align-items:center;flex-wrap:wrap;gap:16px;color:#657080;font-size:12px}
+.cfg-shell .cfg-dot{display:inline-block;width:7px;height:7px;margin-right:5px;border-radius:50%}
+.cfg-shell .cfg-dot.running{background:#67c23a}.cfg-shell .cfg-dot.stopped{background:#9ba2ad}.cfg-shell .cfg-dot.error{background:#e6a23c}
+.cfg-shell .cfg-service-filters{display:flex;gap:8px;margin:12px 0}
+.cfg-shell .cfg-service-filters .el-input{width:230px}.cfg-shell .cfg-service-filters .el-select{width:150px}
+.cfg-shell .cfg-service-table{width:100%;border:1px solid #e4e8ef;border-radius:8px;background:#fff}
+.cfg-shell .cfg-service-table .el-table__header th{background:#f5f7fa;color:#667085;font-size:12px}
+.cfg-shell .cfg-service-table .el-table__cell{font-size:12px}
+.cfg-shell .cfg-muted,.cfg-shell .cfg-footnote{color:#98a0ad;font-size:11px}
+.cfg-shell .cfg-footnote{margin-top:10px;line-height:1.5}
+@media(max-width:900px){.cfg-shell{grid-template-columns:165px minmax(0,1fr)}.cfg-shell .cfg-main{padding:18px}.cfg-shell .cfg-field-solo{margin-top:0}.cfg-shell .cfg-field-solo .cfg-field-label{padding-top:0}.cfg-shell .cfg-field{grid-template-columns:minmax(0,1fr) minmax(145px,1fr)}}
+@media(max-width:640px){.cfg-shell{display:block}.cfg-shell .cfg-sidebar{padding:10px 12px;border-right:0;border-bottom:1px solid #e4e7ed}.cfg-shell .cfg-sidebar-title{padding:0 2px 7px}.cfg-shell .cfg-nav.el-menu{display:flex;gap:4px;overflow-x:auto}.cfg-shell .cfg-nav .el-menu-item{flex:0 0 auto;height:34px;line-height:34px}.cfg-shell .cfg-main{padding:14px}.cfg-shell .cfg-card-content{gap:8px}.cfg-shell .cfg-field{display:flex;flex-wrap:wrap;gap:6px}.cfg-shell .cfg-field-label,.cfg-shell .cfg-control,.cfg-shell .cfg-field-hint{flex:1 1 100%}.cfg-shell .cfg-control .el-radio-group{justify-content:flex-start}.cfg-shell .cfg-service-summary{flex-wrap:wrap}.cfg-shell .cfg-service-filters .el-input{width:60%}.cfg-shell .cfg-service-filters .el-select{width:40%}}
 
 </style>
 <style data-source="assets/scene-3d-demo.css">
@@ -1027,6 +921,7 @@ body { display: block; margin: 0; overflow: hidden; background: #f5f7fa; color: 
 @media (prefers-reduced-motion:reduce){.beaver-avatar svg,.beaver-focus{transition:none}}
 
 .beaver-btn:disabled { opacity:.45; cursor:default; }
+
 
 
 </style>
@@ -1159,7 +1054,7 @@ body { display: block; margin: 0; overflow: hidden; background: #f5f7fa; color: 
           </section>
 
           <section id="page-tool" class="wb-page wb-tool-page" v-show="S.page === 'tool'">
-            <div class="wb-tool-toolbar"><h1>{{ activeToolName }}</h1><el-button @click="closeCurrentTool">{{ tr('关闭工具', 'Close tool') }}</el-button></div>
+            <div class="wb-tool-toolbar"><h1>{{ activeToolName }}</h1></div>
             <div id="toolCanvas" class="toolcanvas wb-tool-canvas" v-loading="UI.toolLoading" :element-loading-text="tr('正在加载工具页面…', 'Loading tool page…')" aria-label="工具业务页面">
               <div id="toolContent" v-pre></div>
               <el-empty v-if="UI.toolPlaceholder" class="wb-tool-placeholder" :description="tr('此工具的业务页面仍由所属团队设计。', 'This tool page is owned by its team.')"></el-empty>
@@ -2200,344 +2095,147 @@ window.AstraElementLocales = {
 
 </script>
 <script data-source="assets/configuration-element-plus.js">
-/* System configuration review prototype. No network, robot commands, or persisted settings. */
+/* System configuration review prototype. Everything below is simulated and local to the page. */
 (function () {
   "use strict";
-  let app = null;
-  let view = null;
-  let host = null;
-  let model = null;
-  let language = "zh";
-
+  let app = null, view = null, host = null, model = null, language = "zh";
   const categories = [
-    { id: "general", zh: "通用", en: "General", introZh: "运行模式和业务场景", introEn: "Operating modes and business scenarios" },
-    { id: "services", zh: "系统服务", en: "System services", introZh: "查看服务状态及重启操作", introEn: "View service states and restart actions" },
-    { id: "map", zh: "地图与导航", en: "Maps and navigation", introZh: "地图、定位与导航相关配置", introEn: "Map, localization, and navigation settings" },
-    { id: "motion", zh: "规划与控制", en: "Planning and control", introZh: "运动控制参数套餐", introEn: "Motion-control parameter profiles" },
-    { id: "sensors", zh: "感知设备", en: "Perception devices", introZh: "相机与雷达配置", introEn: "Camera and lidar settings" },
-    { id: "tools", zh: "末端工具", en: "End tools", introZh: "左右末端工具配置", introEn: "Left and right end-tool settings" },
-    { id: "components", zh: "系统组件", en: "System components", introZh: "电池、Embosa、网关等组件配置", introEn: "Battery, Embosa, gateway, and other components" },
-    { id: "display", zh: "显示与语言", en: "Display and language", introZh: "屏保、时区与系统语言", introEn: "Screensaver, timezone, and system language" }
+    {id:"general", zh:"通用", en:"General", icon:"⚙", introZh:"机器人基础运行配置", introEn:"Robot operating settings"},
+    {id:"services", zh:"系统服务", en:"System services", icon:"◈", introZh:"查看与管理机器人核心服务的运行、启停与开机启动。", introEn:"View and manage service state and startup."},
+    {id:"map", zh:"地图与导航", en:"Maps and navigation", icon:"⌖", introZh:"配置地图、定位与导航相关参数。", introEn:"Map, localization, and navigation settings."},
+    {id:"motion", zh:"规划与控制", en:"Planning and control", icon:"☷", introZh:"配置机器人的运动规划与控制参数。", introEn:"Planning and motion-control settings."},
+    {id:"sensors", zh:"感知设备", en:"Perception devices", icon:"◎", introZh:"配置相机、雷达等感知设备参数。", introEn:"Configure cameras and lidar."},
+    {id:"tools", zh:"末端工具", en:"End tools", icon:"⌁", introZh:"配置左右臂末端工具。", introEn:"Configure left and right end tools."},
+    {id:"components", zh:"系统组件", en:"System components", icon:"▦", introZh:"配置机器人系统组件。", introEn:"Configure robot system components."},
+    {id:"display", zh:"显示与语言", en:"Display and language", icon:"▣", introZh:"配置屏幕显示、时区与系统语言。", introEn:"Configure display, timezone and system language."}
   ];
-
-  const fields = [
-    { id: "mode", category: "general", zh: "运行模式", en: "Operating mode", descZh: "选择机器人运行模式。适用机型和切换影响待确认。", descEn: "Select an operating mode. Model support and switching impact are to be confirmed.", kind: "select", typeZh: "枚举", typeEn: "Enum", review: true,
-      options: [{ value: "mapping", zh: "部署建图", en: "Deployment / mapping" }, { value: "working", zh: "工作模式", en: "Work mode" }] },
-    { id: "scenario", category: "general", zh: "业务场景", en: "Business scenario", descZh: "选择业务场景配置；自定义场景文件的适用范围待确认。", descEn: "Select a scenario configuration. Custom-file applicability is to be confirmed.", kind: "select", typeZh: "枚举", typeEn: "Enum", review: true,
-      options: [{ value: "clerk", zh: "Clerk", en: "Clerk" }, { value: "pw1", zh: "PW1", en: "PW1" }, { value: "custom", zh: "自定义", en: "Custom" }] },
-    { id: "scenarioFile", category: "general", zh: "自定义场景文件", en: "Custom scenario file", descZh: "客户自定义配置仅保留一份；文件格式、覆盖和下载规则待确认。", descEn: "One customer configuration file; format, replacement, and download rules are to be confirmed.", kind: "file", typeZh: "配置文件", typeEn: "Configuration file", review: true },
-    { id: "mapConfig", category: "map", zh: "地图配置", en: "Map settings", descZh: "地图服务配置项待相关团队补充。", descEn: "Map-service fields await the responsible team.", kind: "pending" },
-    { id: "localization", category: "map", zh: "定位配置", en: "Localization settings", descZh: "定位服务配置项待相关团队补充。", descEn: "Localization fields await the responsible team.", kind: "pending" },
-    { id: "navigation", category: "map", zh: "导航配置", en: "Navigation settings", descZh: "导航服务配置项待相关团队补充。", descEn: "Navigation fields await the responsible team.", kind: "pending" },
-    { id: "motionProfile", category: "motion", zh: "运动控制模式", en: "Motion-control profile", descZh: "选择运动控制参数套餐；各套餐具体参数及适用机型待确认。", descEn: "Choose a control profile. Profile parameters and model support are to be confirmed.", kind: "radio", typeZh: "参数套餐", typeEn: "Profile", review: true,
-      options: [{ value: "fast", zh: "极速模式", en: "Fast" }, { value: "balanced", zh: "均衡模式", en: "Balanced" }, { value: "smooth", zh: "丝滑模式", en: "Smooth" }] },
-    { id: "armCamera", category: "sensors", zh: "手臂相机", en: "Arm cameras", descZh: "配置项、取值和设备范围待相机团队补充。", descEn: "Fields, values, and device scope await the camera team.", kind: "pending" },
-    { id: "headCamera", category: "sensors", zh: "头部相机", en: "Head cameras", descZh: "配置项、取值和设备范围待相机团队补充。", descEn: "Fields, values, and device scope await the camera team.", kind: "pending" },
-    { id: "lidar", category: "sensors", zh: "雷达", en: "Lidar", descZh: "雷达服务配置项待补充。", descEn: "Lidar-service settings are to be supplied.", kind: "pending" },
-    { id: "leftEnd", category: "tools", zh: "左末端类型", en: "Left end-tool type", descZh: "可选类型由末端服务提供，实际选项待确认。", descEn: "Options are supplied by the end-tool service and remain to be confirmed.", kind: "pending", typeZh: "枚举", typeEn: "Enum" },
-    { id: "rightEnd", category: "tools", zh: "右末端类型", en: "Right end-tool type", descZh: "可选类型由末端服务提供，实际选项待确认。", descEn: "Options are supplied by the end-tool service and remain to be confirmed.", kind: "pending", typeZh: "枚举", typeEn: "Enum" },
-    { id: "battery", category: "components", zh: "电池", en: "Battery", descZh: "相关配置项待电池团队补充。", descEn: "Configuration fields await the battery team.", kind: "pending" },
-    { id: "embosaIp", category: "components", zh: "Embosa 全局 IP", en: "Embosa global IP", descZh: "输入合法 IP 地址；具体生效条件和适用范围待确认。", descEn: "Enter a valid IP address. Applicability and adoption conditions are to be confirmed.", kind: "ip", typeZh: "字符串", typeEn: "String" },
-    { id: "embosaLog", category: "components", zh: "Embosa 日志等级", en: "Embosa log level", descZh: "日志等级可选值待研发确认。", descEn: "Log-level options await engineering confirmation.", kind: "pending", typeZh: "枚举", typeEn: "Enum" },
-    { id: "gateway", category: "components", zh: "网关", en: "Gateway", descZh: "网关配置项待补充。", descEn: "Gateway fields are to be supplied.", kind: "pending" },
-    { id: "arbitration", category: "components", zh: "控制权仲裁", en: "Control arbitration", descZh: "配置项及可操作范围待补充。", descEn: "Fields and allowed operations are to be supplied.", kind: "pending" },
-    { id: "charging", category: "components", zh: "充电", en: "Charging", descZh: "充电配置项待补充。", descEn: "Charging fields are to be supplied.", kind: "pending" },
-    { id: "screensaverTime", category: "display", zh: "进入屏保时间", en: "Screensaver delay", descZh: "设置屏保触发时间；可选时间及适用机型待确认。", descEn: "Set screensaver delay. Available values and model support are to be confirmed.", kind: "pending", typeZh: "时间／枚举", typeEn: "Time / enum" },
-    { id: "screensaverImage", category: "display", zh: "屏保 Logo（G1）", en: "Screensaver logo (G1)", descZh: "图片的格式、尺寸、大小和适用机型待确认。", descEn: "Image format, dimensions, size, and model support are to be confirmed.", kind: "file", typeZh: "图片", typeEn: "Image" },
-    { id: "screensaverVideo", category: "display", zh: "屏保视频（S1）", en: "Screensaver video (S1)", descZh: "视频的格式、大小和适用机型待确认。", descEn: "Video format, size, and model support are to be confirmed.", kind: "file", typeZh: "视频", typeEn: "Video" },
-    { id: "timezone", category: "display", zh: "系统时区", en: "System timezone", descZh: "选择时区；实际时区列表及来源待确认，以下仅作交互示意。", descEn: "Choose a timezone. Actual choices and their source are to be confirmed; this option is illustrative.", kind: "select", typeZh: "枚举", typeEn: "Enum",
-      options: [{ value: "Asia/Shanghai", zh: "（UTC+08:00）北京、上海（示意）", en: "(UTC+08:00) Beijing, Shanghai (example)" }] },
-    { id: "systemLanguage", category: "display", zh: "系统语言", en: "System language", descZh: "切换机器人系统语言，不改变此原型的界面语言。", descEn: "Change the robot's system language, not this prototype's interface language.", kind: "radio", typeZh: "枚举", typeEn: "Enum",
-      options: [{ value: "zh", zh: "中文", en: "Chinese" }, { value: "en", zh: "英文", en: "English" }] }
+  const opt = (value, zh, en) => ({value, zh, en:en || zh});
+  const fields = {
+    mode: {id:"mode",zh:"运行模式",en:"Operating mode",desc:"切换机器人运行模式；修改后需重启相关服务。",kind:"select",options:[opt("mapping","部署建图","Deployment / mapping"),opt("working","工作模式","Work mode")]},
+    scenario: {id:"scenario",zh:"业务场景",en:"Business scenario",desc:"选择业务场景配置，应用对应的系统参数。",kind:"select",options:[opt("clerk","Clerk"),opt("pw1","PW1"),opt("custom","自定义","Custom")]},
+    scenarioFile: {id:"scenarioFile",zh:"自定义场景",en:"Custom scenario",desc:"上传客户自定义场景配置文件，仅保留一份。",kind:"file",hint:"格式及覆盖规则待确认；.yaml / .json 为界面示例。"},
+    map: {id:"map",zh:"地图配置",en:"Map configuration",desc:"选择地图服务使用的地图。",kind:"select",options:[opt("demo-map","工厂地图_v1.3（示意）","Factory map v1.3 (example)")],hint:"实际地图列表与来源待确认。"},
+    localization: {id:"localization",zh:"定位配置",en:"Localization",desc:"定位配置项待相关团队补充。",kind:"pending"},
+    obstacle: {id:"obstacle",zh:"障碍物保持距离",en:"Obstacle clearance",kind:"number",unit:"m",hint:"单位示意，范围与实际校验规则待确认。"},
+    safety: {id:"safety",zh:"安全权重",en:"Safety weight",kind:"number",hint:"比例范围及含义待确认。"},
+    smooth: {id:"smooth",zh:"导航平滑权重",en:"Navigation smoothness weight",kind:"number",hint:"比例范围及含义待确认。"},
+    navSpeed: {id:"navSpeed",zh:"默认导航速度",en:"Default navigation speed",kind:"number",unit:"m/s",hint:"单位示意，范围与实际校验规则待确认。"},
+    retry: {id:"retry",zh:"导航重试次数",en:"Navigation retries",kind:"select",options:[opt("1","1 次","1"),opt("2","2 次","2"),opt("3","3 次","3")]},
+    motion: {id:"motion",zh:"运动控制模式",en:"Motion-control profile",desc:"切换运动控制参数套餐，影响机器人的运动风格。",kind:"radio",options:[opt("fast","极速模式","Fast"),opt("balanced","均衡模式","Balanced"),opt("smooth","丝滑模式","Smooth")]},
+    armCamera: {id:"armCamera",zh:"手臂相机配置",en:"Arm camera settings",desc:"查看和修改左右手臂相机参数。",kind:"pending"},
+    correction: {id:"correction",zh:"畸变校正",en:"Distortion correction",kind:"switch",hint:"实际支持与生效条件待确认。"},
+    resolution: {id:"resolution",zh:"分辨率",en:"Resolution",kind:"select",options:[opt("1920x1080","1920 × 1080（示意）","1920 × 1080 (example)")],hint:"支持的选项由相机团队确认。"},
+    frameRate: {id:"frameRate",zh:"帧率",en:"Frame rate",kind:"select",options:[opt("30","30 FPS（示意）","30 FPS (example)")],hint:"支持的选项由相机团队确认。"},
+    videoFormat: {id:"videoFormat",zh:"视频流格式",en:"Video stream format",kind:"select",options:[opt("h264","H.264（示意）","H.264 (example)")],hint:"支持的选项由相机团队确认。"},
+    lidar: {id:"lidar",zh:"雷达配置",en:"Lidar settings",desc:"雷达服务配置项待补充。",kind:"pending"},
+    leftEnd: {id:"leftEnd",zh:"左末端类型",en:"Left end-tool type",desc:"可选值由末端服务提供。",kind:"pending"},
+    rightEnd: {id:"rightEnd",zh:"右末端类型",en:"Right end-tool type",desc:"可选值由末端服务提供。",kind:"pending"},
+    battery: {id:"battery",zh:"电池配置",en:"Battery",desc:"电池配置项待电池团队补充。",kind:"pending"},
+    embosaIp: {id:"embosaIp",zh:"Embosa 全局 IP",en:"Embosa global IP",desc:"配置 Embosa 全局 IP。",kind:"ip",hint:"生效条件及适用范围待确认。"},
+    embosaLog: {id:"embosaLog",zh:"Embosa 日志等级",en:"Embosa log level",desc:"可选等级待研发确认。",kind:"pending"},
+    gateway: {id:"gateway",zh:"网关",en:"Gateway",desc:"网关配置项待补充。",kind:"pending"},
+    arbitration: {id:"arbitration",zh:"控制权仲裁",en:"Control arbitration",desc:"控制权仲裁配置项待补充。",kind:"pending"},
+    charging: {id:"charging",zh:"充电",en:"Charging",desc:"充电配置项待补充。",kind:"pending"},
+    screenTime: {id:"screenTime",zh:"进入屏保时间",en:"Screensaver delay",desc:"设置屏保触发时间。",kind:"pending"},
+    screenLogo: {id:"screenLogo",zh:"屏保 Logo（G1）",en:"Screensaver logo (G1)",desc:"设置屏保 Logo 图片。",kind:"file",hint:"格式、大小与适用机型待确认。"},
+    screenVideo: {id:"screenVideo",zh:"屏保视频（S1）",en:"Screensaver video (S1)",desc:"设置屏保视频。",kind:"file",hint:"格式、大小与适用机型待确认。"},
+    timezone: {id:"timezone",zh:"时区",en:"Timezone",desc:"设置系统时区。",kind:"select",options:[opt("Asia/Shanghai","（UTC+08:00）北京、上海（示意）","(UTC+08:00) Beijing, Shanghai (example)")],hint:"实际时区列表待确认。"},
+    systemLanguage: {id:"systemLanguage",zh:"语言",en:"System language",desc:"设置机器人系统语言，不改变本原型界面语言。",kind:"radio",options:[opt("zh","中文","Chinese"),opt("en","英文","English")]}
+  };
+  const groups = {
+    general:[{icon:"▱",title:"运行模式",fields:["mode"],tip:"生效方式：重启相关服务；服务及耗时待确认。"},{icon:"▦",title:"业务场景",fields:["scenario"]},{icon:"▤",title:"自定义场景",fields:["scenarioFile"],tip:"客户自定义配置文件仅保留一份；修改后需重启相关服务。"}],
+    map:[{icon:"▧",title:"地图配置",fields:["map"]},{icon:"⌖",title:"定位配置",fields:["localization"]},{icon:"➤",title:"导航配置",desc:"调整导航策略与运动参数。",fields:["obstacle","safety","smooth","navSpeed","retry"]}],
+    motion:[{icon:"☷",title:"运动控制模式",fields:["motion"],tip:"生效方式：重启相关控制服务；影响与耗时待确认。"}],
+    sensors:[{icon:"◎",title:"手臂相机配置",fields:["armCamera"]},{icon:"◎",title:"头部相机配置",desc:"配置头部相机图像处理与视频输出参数。",fields:["correction","resolution","frameRate","videoFormat"]},{icon:"◉",title:"雷达配置",fields:["lidar"]}],
+    tools:[{icon:"⌁",title:"末端工具",fields:["leftEnd","rightEnd"]}],
+    components:[{icon:"▦",title:"系统组件",fields:["battery","embosaIp","embosaLog","gateway","arbitration","charging"]}],
+    display:[{icon:"▣",title:"屏幕显示",fields:["screenTime","screenLogo","screenVideo"]},{icon:"⊕",title:"时区",fields:["timezone"]},{icon:"文",title:"语言",fields:["systemLanguage"]}]
+  };
+  const services = [
+    {id:"system",name:"系统服务",state:"running",startup:true},{id:"perception",name:"感知服务",state:"running",startup:true},
+    {id:"localization",name:"定位服务",state:"running",startup:true},{id:"navigation",name:"导航服务",state:"running",startup:true},
+    {id:"planning",name:"规划服务",state:"running",startup:true},{id:"control",name:"控制服务",state:"running",startup:true},
+    {id:"camera",name:"相机服务",state:"error",startup:true},{id:"end_tool",name:"末端服务",state:"stopped",startup:false}
   ];
-
-  const serviceExamples = [
-    { zh: "系统服务", en: "System service", stateZh: "运行中", stateEn: "Running", tone: "success" },
-    { zh: "感知服务", en: "Perception service", stateZh: "运行中", stateEn: "Running", tone: "success" },
-    { zh: "定位服务", en: "Localization service", stateZh: "运行中", stateEn: "Running", tone: "success" },
-    { zh: "导航服务", en: "Navigation service", stateZh: "运行中", stateEn: "Running", tone: "success" },
-    { zh: "规划服务", en: "Planning service", stateZh: "运行中", stateEn: "Running", tone: "success" },
-    { zh: "控制服务", en: "Control service", stateZh: "运行中", stateEn: "Running", tone: "success" },
-    { zh: "相机服务", en: "Camera service", stateZh: "异常", stateEn: "Error", tone: "warning" },
-    { zh: "末端服务", en: "End-tool service", stateZh: "已停止", stateEn: "Stopped", tone: "info" }
-  ];
-
   function initialState() {
-    return {
-      lang: language, category: "general", draft: {}, saved: {}, dirty: {}, checked: false,
-      hasMockSave: false, hasMockRestart: false, infoVisible: false, selectedInfo: null,
-      validationError: "", resultMessage: "", serviceNotice: ""
-    };
+    const values = {mode:"working",scenario:"clerk",motion:"balanced",map:"demo-map",obstacle:"0.30",safety:"0.70",smooth:"0.50",navSpeed:"0.80",retry:"3",correction:true,resolution:"1920x1080",frameRate:"30",videoFormat:"h264",systemLanguage:"zh"};
+    return {lang:language,category:"general",values:{...values},saved:{...values},dirty:{},services:services.map(x=>({...x})),search:"",serviceFilter:"all",notice:"",hasSaved:false,hasRestarted:false};
   }
   function state() { if (!model) model = Vue.reactive(initialState()); return model; }
-
-  function isValidIp(value) {
-    if (typeof value !== "string" || !value.trim()) return false;
-    const address = value.trim();
-    if (/^\d{1,3}(\.\d{1,3}){3}$/.test(address)) {
-      return address.split(".").every(part => Number(part) <= 255 && (part === "0" || !part.startsWith("0")));
-    }
-    if (!address.includes(":")) return false;
-    try { const parsed = new URL("http://[" + address + "]/"); return parsed.hostname.startsWith("["); }
-    catch (_) { return false; }
-  }
-
   const ConfigView = {
-    name: "AstraConfigurationPrototype",
-    data() { return { model: state(), categories, fields, serviceExamples }; },
+    name:"AstraConfigurationPrototype",
+    data() { return {m:state(),categories,fields,groups}; },
     computed: {
-      locale() {
-        const locales = window.AstraElementLocales || {};
-        return this.model.lang === "zh" ? (locales.zh || window.ElementPlusLocaleZhCn) : (locales.en || window.ElementPlusLocaleEn);
-      },
-      currentCategory() { return this.categories.find(c => c.id === this.model.category) || this.categories[0]; },
-      currentFields() { return this.fields.filter(f => f.category === this.model.category && (f.id !== "scenarioFile" || this.model.draft.scenario === "custom" || this.model.saved.scenario === "custom")); },
-      changeCount() { return Object.keys(this.model.dirty).length; },
-      savedText() { return this.model.hasMockSave ? this.t("模拟已保存", "Simulated save") : this.t("待获取", "Unavailable"); },
-      stageText() {
-        if (this.changeCount) return this.model.checked ? this.t("草稿已模拟校验", "Draft checked in simulation") : this.t("草稿待校验", "Draft requires checking");
-        if (this.model.hasMockSave) return this.t("模拟已保存 · 待确认生效", "Simulated save · adoption unconfirmed");
-        return this.t("未修改", "Unchanged");
-      }
+      locale() { const l=window.AstraElementLocales||{}; return this.m.lang==="zh"?(l.zh||window.ElementPlusLocaleZhCn):(l.en||window.ElementPlusLocaleEn); },
+      category() { return this.categories.find(x=>x.id===this.m.category)||this.categories[0]; },
+      currentGroups() { return this.groups[this.m.category]||[]; },
+      dirtyCount() { return Object.keys(this.m.dirty).length; },
+      counts() {return {running:this.m.services.filter(x=>x.state==="running").length,stopped:this.m.services.filter(x=>x.state==="stopped").length,error:this.m.services.filter(x=>x.state==="error").length};},
+      filteredServices() {const q=this.m.search.trim().toLowerCase();return this.m.services.filter(x=>(!q||(x.name+" "+x.id).toLowerCase().includes(q))&&(this.m.serviceFilter==="all"||x.state===this.m.serviceFilter));}
     },
     methods: {
-      t(zh, en) { return this.model.lang === "zh" ? zh : (en || zh); },
-      categoryLabel(c) { return this.t(c.zh, c.en); },
-      fieldLabel(f) { return this.t(f.zh, f.en); },
-      fieldDesc(f) { return this.t(f.descZh, f.descEn); },
-      optionLabel(o) { return this.t(o.zh, o.en); },
-      chooseCategory(id) { this.model.category = id; this.model.serviceNotice = ""; },
-      markChanged(field) {
-        const v = this.model.draft[field.id] || "";
-        const old = this.model.saved[field.id] || "";
-        if (v === old) delete this.model.dirty[field.id];
-        else this.model.dirty[field.id] = v;
-        this.model.checked = false;
-        this.model.validationError = "";
-        this.model.resultMessage = "";
+      t(zh,en){return this.m.lang==="zh"?zh:(en||zh);},
+      cat(c){return this.t(c.zh,c.en);},
+      chooseCategory(id){this.m.category=id;this.m.notice="";},
+      fieldLabel(f){return this.t(f.zh,f.en);},
+      async change(f,value){
+        const old=this.m.values[f.id]; if(old===value)return;
+        if(f.id==="embosaIp"&&value&&!this.validIp(value)){this.m.notice=this.t("IP 地址格式无效，请输入合法 IP。","Invalid IP address.");return;}
+        if(f.kind==="number"&&(String(value).trim()===""||!Number.isFinite(Number(value)))){this.m.notice=this.t("请输入有效数字；实际取值范围待确认。","Enter a valid number. The allowed range remains unconfirmed.");return;}
+        try { await ElementPlus.ElMessageBox.confirm(this.t("此项修改将进入模拟草稿。保存后需要重启相关服务才能生效；原型不会修改机器人。","The simulated change requires a service restart after saving. No robot settings will be modified."),this.t("确认修改配置？","Confirm configuration change?"),{type:"warning",confirmButtonText:this.t("确认","Confirm"),cancelButtonText:this.t("取消","Cancel")}); }
+        catch(_){this.m.notice=this.t("已取消本次修改。","Change cancelled.");return;}
+        this.m.values[f.id]=value;
+        if(value===this.m.saved[f.id])delete this.m.dirty[f.id];else this.m.dirty[f.id]=true;
+        this.m.hasRestarted=false; this.m.notice=this.t("已修改模拟草稿，保存后需重启相关服务并重新读取实际值。","Draft changed. Save, restart the affected service, and read the actual value.");
       },
-      handleFile(field, event) {
-        const file = event.target.files && event.target.files[0];
-        if (!file) return;
-        this.model.draft[field.id] = file.name;
-        this.markChanged(field);
-        event.target.value = "";
-      },
-      fieldValue(field) {
-        const val = this.model.saved[field.id];
-        if (!val) return this.t("待获取", "Unavailable");
-        const option = (field.options || []).find(item => item.value === val);
-        return (option ? this.optionLabel(option) : val) + this.t("（模拟）", " (demo)");
-      },
-      openMetadata(field) { this.model.selectedInfo = field; this.model.infoVisible = true; },
-      optionDescription(field) {
-        if (field.options) return field.options.map(item => this.optionLabel(item)).join(" / ");
-        if (field.id === "embosaIp") return this.t("合法 IP 地址", "Valid IP address");
-        return this.t("待确认", "To be confirmed");
-      },
-      validateDraft() {
-        if (!this.changeCount) {
-          this.model.validationError = this.t("请先修改配置项。", "Change a setting first.");
-          return;
-        }
-        const ip = this.model.draft.embosaIp;
-        if (this.model.dirty.embosaIp && !isValidIp(ip)) {
-          this.model.validationError = this.t("Embosa 全局 IP 格式无效，请填写合法 IP 地址。", "The Embosa global IP is invalid. Enter a valid IP address.");
-          this.model.checked = false;
-          return;
-        }
-        if (this.model.draft.scenario === "custom" && !this.model.draft.scenarioFile && !this.model.saved.scenarioFile) {
-          this.model.validationError = this.t("自定义场景需要选择配置文件；文件格式和实际校验规则待确认。", "Select a custom scenario file; actual format and validation rules remain to be confirmed.");
-          this.model.checked = false;
-          return;
-        }
-        this.model.validationError = "";
-        this.model.checked = true;
-        this.model.resultMessage = this.t("模拟校验通过。真实配置约束、权限与机型适配仍需机端核验。", "Simulated check passed. Real constraints, permissions, and model compatibility require robot-side validation.");
-      },
-      async saveDraft() {
-        if (!this.model.checked || !this.changeCount) return;
-        try {
-          await ElementPlus.ElMessageBox.confirm(
-            this.t("将当前草稿进行模拟保存。原型不会写入机器人；关联服务、权限及生效方式需要研发确认。", "Simulate saving the draft. This prototype does not write to a robot; affected services, permissions, and adoption conditions require confirmation."),
-            this.t("确认模拟保存？", "Confirm simulated save?"),
-            { confirmButtonText: this.t("模拟保存", "Simulate save"), cancelButtonText: this.t("取消", "Cancel"), type: "warning" }
-          );
-          Object.keys(this.model.dirty).forEach(id => { this.model.saved[id] = this.model.draft[id]; });
-          this.model.dirty = {};
-          this.model.checked = false;
-          this.model.hasMockSave = true;
-          this.model.hasMockRestart = false;
-          this.model.resultMessage = this.t("模拟已保存；未写入机器人。实际服务采用状态待确认。", "Simulated save only; nothing was written to a robot. Actual service adoption is unconfirmed.");
-        } catch (_) {}
-      },
-      discardDraft() {
-        Object.keys(this.model.dirty).forEach(id => { this.model.draft[id] = this.model.saved[id] || ""; });
-        this.model.dirty = {};
-        this.model.checked = false;
-        this.model.validationError = "";
-        this.model.resultMessage = this.t("已放弃本次模拟草稿。", "Simulated draft discarded.");
-      },
-      async restartDemo(service) {
-        const target = service ? this.categoryLabel(service) : this.t("对应服务", "the affected service");
-        try {
-          await ElementPlus.ElMessageBox.confirm(
-            this.t("仅演示重启 " + target + "。具体影响、权限、依赖及停止条件待评审；不会向机器人发送指令。", "This only simulates restarting " + target + ". Impact, permissions, dependencies, and stop conditions remain under review. No robot command will be sent."),
-            this.t("确认模拟重启？", "Confirm simulated restart?"),
-            { confirmButtonText: this.t("模拟重启", "Simulate restart"), cancelButtonText: this.t("取消", "Cancel"), type: "warning" }
-          );
-          if (this.model.hasMockSave) this.model.hasMockRestart = true;
-          this.model.serviceNotice = this.t("已演示重启请求；真实服务状态和生效结果仍待获取。", "Restart request simulated; actual service state and adoption remain unavailable.");
-          this.model.resultMessage = this.model.serviceNotice;
-        } catch (_) {}
-      },
-      readActualDemo() {
-        this.model.resultMessage = this.t("原型未连接机器人，无法重新读取实际值；是否生效仍待确认。", "This prototype is not connected to a robot. Actual values and adoption cannot be confirmed.");
-      }
+      validIp(value){if(typeof value!=="string")return false;const a=value.trim();if(/^\d{1,3}(\.\d{1,3}){3}$/.test(a))return a.split(".").every(p=>Number(p)<=255&&(p==="0"||!p.startsWith("0")));if(!a.includes(":"))return false;try{return new URL("http://["+a+"]/").hostname.startsWith("[");}catch(_){return false;}},
+      fileChange(f,event){const file=event.target.files&&event.target.files[0];if(file)this.change(f,file.name);event.target.value="";},
+      downloadDemo(){this.m.notice=this.t("尚未连接机器人，无法下载实际场景配置文件。","No robot is connected; the actual scene configuration cannot be downloaded.");},
+      async save(){if(!this.dirtyCount)return;if(this.m.values.scenario==="custom"&&!this.m.values.scenarioFile){this.m.notice=this.t("自定义场景需要选择配置文件；实际文件格式待确认。","Select a custom scenario file. The actual format is unconfirmed.");return;}try{await ElementPlus.ElMessageBox.confirm(this.t("保存当前模拟草稿；实际产品需重启相关服务并重新读取实际值以确认生效。本原型不会写入机器人。","Save this simulated draft. Affected services must be restarted and actual values read back. No robot is changed."),this.t("模拟保存配置？","Save simulated settings?"),{type:"warning",confirmButtonText:this.t("模拟保存","Save demo"),cancelButtonText:this.t("取消","Cancel")});}catch(_){return;}this.m.saved={...this.m.values};this.m.dirty={};this.m.hasSaved=true;this.m.hasRestarted=false;this.m.notice=this.t("模拟保存完成；需重启相关服务并重新读取实际值，真实状态未确认。","Saved in simulation. Restart the affected service and read actual values; real status is unconfirmed.");},
+      resetDefaults(){this.m.notice=this.t("实际默认值待确认，原型无法恢复机器人默认配置。","Actual defaults are unconfirmed; this prototype cannot restore robot defaults.");},
+      async restart(){try{await ElementPlus.ElMessageBox.confirm(this.t("仅模拟重启对应服务，不会向机器人发送指令。","This only simulates a service restart."),this.t("模拟重启服务？","Simulate restart?"),{type:"warning",confirmButtonText:this.t("模拟重启","Simulate restart"),cancelButtonText:this.t("取消","Cancel")});}catch(_){return;}this.m.hasRestarted=true;this.m.notice=this.t("已模拟重启请求；请重新读取实际值确认生效。","Restart simulated; read actual values to confirm adoption.");},
+      readActual(){this.m.notice=this.t("原型未连接机器人，无法读取实际值或确认生效。","No robot connected; actual values cannot be read.");},
+      labelState(s){return s.state==="running"?this.t("运行中","Running"):s.state==="stopped"?this.t("已停止","Stopped"):this.t("异常","Error");},
+      tone(s){return s.state==="running"?"success":s.state==="error"?"warning":"info";},
+      async serviceAction(s,action,value){const label=action==="startup"?(value?"允许开机启动":"禁止开机启动"):action==="restart"?"重启":s.state==="running"?"关闭":"启动";try{await ElementPlus.ElMessageBox.confirm(this.t("仅模拟"+label+"“"+s.name+"”；权限、影响和真实状态待确认，不会向机器人发送指令。","Simulate a service action. No robot command will be sent."),this.t("确认模拟操作？","Confirm simulated action?"),{type:"warning",confirmButtonText:this.t("确认","Confirm"),cancelButtonText:this.t("取消","Cancel")});}catch(_){return;}if(action==="startup")s.startup=value;else if(action==="toggle")s.state=s.state==="running"?"stopped":"running";this.m.notice=this.t("服务操作为模拟，实际状态及权限待确认。","Service action simulated; actual status and permissions are unconfirmed.");},
+      refreshServices(){this.m.notice=this.t("未连接机器人，无法刷新真实服务状态。","No robot connected; actual service state cannot be refreshed.");}
     },
-    template: `
-      <el-config-provider :locale="locale">
-        <div class="cfg-shell">
-          <aside class="cfg-sidebar">
-            <div class="cfg-sidebar-title">
-              <h2>{{ t('系统配置', 'System Configuration') }}</h2>
-              <p>{{ t('管理机器人系统参数', 'Manage robot configuration') }}</p>
-            </div>
-            <el-menu class="cfg-nav" :default-active="model.category" @select="chooseCategory">
-              <el-menu-item v-for="category in categories" :key="category.id" :index="category.id">
-                <span>{{ categoryLabel(category) }}</span>
-              </el-menu-item>
-            </el-menu>
-          </aside>
-          <main class="cfg-main">
-            <div class="cfg-main-head">
-              <div>
-                <h2 class="cfg-main-title">{{ categoryLabel(currentCategory) }}</h2>
-                <p class="cfg-main-copy">{{ t(currentCategory.introZh, currentCategory.introEn) }}</p>
-              </div>
-              <div class="cfg-header-tags">
-                <el-tag type="info" effect="plain">{{ t('评审原型 · 模拟数据', 'Review prototype · demo data') }}</el-tag>
-              </div>
-            </div>
-            <el-alert class="cfg-alert" type="info" :closable="false" show-icon
-              :title="t('原型未连接机器人；所有配置、文件和服务操作仅演示，不会真正保存、上传或重启。', 'No robot is connected. All settings, file, and service actions are demonstrations only.')"></el-alert>
-            <el-alert v-if="['general','services','motion'].includes(model.category)" class="cfg-alert" type="warning" :closable="false" show-icon
-              :title="t('运行模式、业务场景与服务操作涉及现有设计边界；本页为需求评审方案，具体范围及生效方式待确认。', 'Operating modes, scenarios, and service operations require design-boundary review. Scope and adoption remain unconfirmed.')"></el-alert>
-
-            <div v-if="model.category === 'services'" class="cfg-cards">
-              <el-card class="cfg-card" shadow="never">
-                <template #header>
-                  <div class="cfg-card-heading">
-                    <div><h3 class="cfg-card-title">{{ t('服务列表（示意）', 'Service list (example)') }}</h3><p class="cfg-card-desc">{{ t('实际服务、状态及操作权限以机器人返回为准。', 'Actual services, states, and permissions come from the robot.') }}</p></div>
-                    <el-button @click="readActualDemo">{{ t('刷新状态', 'Refresh status') }}</el-button>
-                  </div>
-                </template>
-                <el-table class="cfg-table" :data="serviceExamples" stripe>
-                  <el-table-column :label="t('服务名称', 'Service')"><template #default="scope">{{ categoryLabel(scope.row) }}</template></el-table-column>
-                  <el-table-column :label="t('运行状态', 'Status')" width="160"><template #default="scope"><el-tag :type="scope.row.tone" effect="light">{{ t(scope.row.stateZh, scope.row.stateEn) }}{{ t('（示意）', ' (example)') }}</el-tag></template></el-table-column>
-                  <el-table-column :label="t('操作', 'Action')" width="145"><template #default="scope"><el-button size="small" @click="restartDemo(scope.row)">{{ t('模拟重启', 'Simulate restart') }}</el-button></template></el-table-column>
-                </el-table>
-                <p class="cfg-card-meta">{{ t('以上服务和状态仅供示意；当前未取得真实状态。', 'These services and states are examples; no live status has been obtained.') }}</p>
-                <el-alert v-if="model.serviceNotice" class="cfg-alert" type="info" :closable="false" :title="model.serviceNotice"></el-alert>
-              </el-card>
-            </div>
-
-            <div v-else class="cfg-cards">
-              <el-card v-for="field in currentFields" :key="field.id" class="cfg-card" shadow="never">
-                <div class="cfg-card-heading">
-                  <div>
-                    <div class="cfg-card-title"><span>{{ fieldLabel(field) }}</span>
-                      <el-tag v-if="field.review" size="small" type="warning" effect="plain">{{ t('待评审', 'Under review') }}</el-tag>
-                      <el-tag v-if="field.kind === 'pending'" size="small" type="info" effect="plain">{{ t('待确认', 'To be confirmed') }}</el-tag>
-                    </div>
-                    <p class="cfg-card-desc">{{ fieldDesc(field) }}</p>
-                  </div>
-                  <el-button link type="primary" @click="openMetadata(field)">{{ t('配置说明', 'Details') }}</el-button>
-                </div>
-
-                <div class="cfg-card-control">
-                  <el-select v-if="field.kind === 'select'" v-model="model.draft[field.id]" :placeholder="t('选择配置项', 'Choose a value')" @change="markChanged(field)">
-                    <el-option v-for="option in field.options" :key="option.value" :value="option.value" :label="optionLabel(option)"></el-option>
-                  </el-select>
-                  <el-radio-group v-else-if="field.kind === 'radio'" v-model="model.draft[field.id]" @change="markChanged(field)">
-                    <el-radio-button v-for="option in field.options" :key="option.value" :value="option.value">{{ optionLabel(option) }}</el-radio-button>
-                  </el-radio-group>
-                  <el-input v-else-if="field.kind === 'ip'" v-model="model.draft[field.id]" :placeholder="t('输入 IP 地址', 'Enter an IP address')" clearable @input="markChanged(field)"></el-input>
-                  <div v-else-if="field.kind === 'file'" class="cfg-file-row">
-                    <label class="el-button el-button--default">
-                      <span>{{ t('选择文件（模拟）', 'Choose file (demo)') }}</span>
-                      <input type="file" style="display:none" @change="handleFile(field,$event)">
-                    </label>
-                    <span>{{ model.draft[field.id] || t('未选择文件', 'No file selected') }}</span>
-                    <el-button v-if="field.id === 'scenarioFile'" disabled>{{ t('下载配置文件', 'Download config') }}</el-button>
-                  </div>
-                  <el-input v-else disabled :placeholder="t('配置项或选项待补充', 'Fields or choices to be supplied')"></el-input>
-                </div>
-                <div class="cfg-card-meta">
-                  <span>{{ t('已保存值', 'Saved value') }}：{{ fieldValue(field) }}</span>
-                  <span>{{ t('实际生效值', 'Applied value') }}：{{ t('待获取', 'Unavailable') }}</span>
-                  <span v-if="model.dirty[field.id] !== undefined">{{ t('已修改草稿', 'Draft changed') }}</span>
-                </div>
-              </el-card>
-            </div>
-
-            <div class="cfg-footer">
-              <div class="cfg-status-row">
-                <div class="cfg-status-item"><small>{{ t('草稿状态', 'Draft') }}</small><strong>{{ stageText }}</strong></div>
-                <div class="cfg-status-item"><small>{{ t('已保存配置', 'Saved configuration') }}</small><strong>{{ savedText }}</strong></div>
-                <div class="cfg-status-item"><small>{{ t('实际生效状态', 'Actual adoption') }}</small><strong>{{ t('待获取', 'Unavailable') }}</strong></div>
-              </div>
-              <el-alert v-if="model.validationError" class="cfg-alert" type="error" :closable="false" :title="model.validationError"></el-alert>
-              <el-alert v-if="model.resultMessage" class="cfg-alert" type="info" :closable="false" :title="model.resultMessage"></el-alert>
-              <div class="cfg-action-row">
-                <el-button :disabled="!changeCount" @click="discardDraft">{{ t('放弃草稿', 'Discard draft') }}</el-button>
-                <el-button :disabled="!changeCount" @click="validateDraft">{{ t('校验草稿', 'Check draft') }}</el-button>
-                <el-button type="primary" :disabled="!model.checked || !changeCount" @click="saveDraft">{{ t('模拟保存', 'Simulate save') }}</el-button>
-                <el-button :disabled="!model.hasMockSave" @click="restartDemo(null)">{{ t('模拟重启对应服务', 'Simulate service restart') }}</el-button>
-                <el-button :disabled="!model.hasMockRestart" @click="readActualDemo">{{ t('重新读取实际值', 'Read actual values') }}</el-button>
-              </div>
-              <p class="cfg-card-meta">{{ t('流程：查看 → 修改 → 校验 → 保存 → 视实际生效条件重启对应服务 → 重新读取实际值。生效方式与影响待评审。', 'Flow: view → edit → check → save → restart as required → read actual values. Adoption and impact are under review.') }}</p>
-            </div>
-          </main>
-          <el-drawer v-model="model.infoVisible" :title="t('配置项说明', 'Configuration details')" size="min(420px, 90vw)">
-            <el-descriptions v-if="model.selectedInfo" :column="1" border>
-              <el-descriptions-item :label="t('配置项名称', 'Name')">{{ fieldLabel(model.selectedInfo) }}</el-descriptions-item>
-              <el-descriptions-item :label="t('所属服务', 'Service')">{{ t('待确认', 'To be confirmed') }}</el-descriptions-item>
-              <el-descriptions-item :label="t('用途', 'Purpose')">{{ fieldDesc(model.selectedInfo) }}</el-descriptions-item>
-              <el-descriptions-item :label="t('数据类型', 'Type')">{{ t(model.selectedInfo.typeZh || '待确认', model.selectedInfo.typeEn || 'To be confirmed') }}</el-descriptions-item>
-              <el-descriptions-item :label="t('可选值／范围', 'Options / range')">{{ optionDescription(model.selectedInfo) }}</el-descriptions-item>
-              <el-descriptions-item :label="t('默认值', 'Default')">{{ t('待确认', 'To be confirmed') }}</el-descriptions-item>
-              <el-descriptions-item :label="t('适用机型／版本', 'Model / version')">{{ t('待确认', 'To be confirmed') }}</el-descriptions-item>
-              <el-descriptions-item :label="t('修改方法', 'Editing')">{{ t('待确认', 'To be confirmed') }}</el-descriptions-item>
-              <el-descriptions-item :label="t('生效方式', 'Adoption')">{{ t('待评审', 'Under review') }}</el-descriptions-item>
-              <el-descriptions-item :label="t('使用限制', 'Restrictions')">{{ t('待确认', 'To be confirmed') }}</el-descriptions-item>
-              <el-descriptions-item :label="t('示例／负责人', 'Example / owner')">{{ t('待确认', 'To be confirmed') }}</el-descriptions-item>
-            </el-descriptions>
-          </el-drawer>
-        </div>
-      </el-config-provider>`
+    template:`
+      <el-config-provider :locale="locale"><div class="cfg-shell">
+        <aside class="cfg-sidebar"><div class="cfg-sidebar-title"><h2>{{ t('系统配置','System Configuration') }}</h2><p>{{ t('管理机器人系统参数与服务配置','Manage robot settings and services') }}</p></div>
+          <el-menu class="cfg-nav" :default-active="m.category" @select="chooseCategory"><el-menu-item v-for="c in categories" :key="c.id" :index="c.id"><span class="cfg-nav-icon">{{ c.icon }}</span><span>{{ cat(c) }}</span></el-menu-item></el-menu>
+        </aside>
+        <main class="cfg-main"><div class="cfg-main-head"><div><h2>{{ cat(category) }}</h2><p>{{ t(category.introZh,category.introEn) }}</p></div><el-tag type="info" effect="plain">{{ t('评审原型 · 示例数据','Review prototype · example data') }}</el-tag></div>
+          <div class="cfg-prototype-note">{{ t('原型未连接机器人，所有值、文件与操作均为模拟。实际配置范围和权限待确认。','Simulation only. No robot connection or actual configuration changes.') }}</div>
+          <el-alert v-if="m.notice" class="cfg-alert" type="info" :closable="false" show-icon :title="m.notice"></el-alert>
+          <template v-if="m.category==='services'">
+            <section class="cfg-service-summary"><div class="cfg-icon">◈</div><strong>{{ t('服务总览','Service overview') }}</strong><div class="cfg-service-counts"><span><i class="cfg-dot running"></i>{{ t('运行中','Running') }} {{ counts.running }}</span><span><i class="cfg-dot stopped"></i>{{ t('已停止','Stopped') }} {{ counts.stopped }}</span><span><i class="cfg-dot error"></i>{{ t('异常','Error') }} {{ counts.error }}</span></div><el-button size="small" @click="refreshServices">{{ t('刷新','Refresh') }}</el-button></section>
+            <div class="cfg-service-filters"><el-input v-model="m.search" clearable :placeholder="t('搜索服务名称','Search services')"></el-input><el-select v-model="m.serviceFilter"><el-option :label="t('全部状态','All states')" value="all"></el-option><el-option :label="t('运行中','Running')" value="running"></el-option><el-option :label="t('已停止','Stopped')" value="stopped"></el-option><el-option :label="t('异常','Error')" value="error"></el-option></el-select></div>
+            <el-table :data="filteredServices" class="cfg-service-table"><el-table-column :label="t('服务名称','Service')" min-width="180"><template #default="scope">{{ scope.row.name }} <span class="cfg-muted">（{{ scope.row.id }}）</span></template></el-table-column><el-table-column :label="t('运行状态','State')" width="130"><template #default="scope"><el-tag :type="tone(scope.row)" effect="light" size="small">{{ labelState(scope.row) }}</el-tag></template></el-table-column><el-table-column :label="t('开机启动','Autostart')" width="115"><template #default="scope"><el-switch :model-value="scope.row.startup" @change="serviceAction(scope.row,'startup',$event)"></el-switch></template></el-table-column><el-table-column :label="t('操作','Actions')" min-width="170"><template #default="scope"><el-button size="small" @click="serviceAction(scope.row,'toggle')">{{ scope.row.state==='running'?t('关闭','Stop'):t('启动','Start') }}</el-button><el-button size="small" @click="serviceAction(scope.row,'restart')">{{ t('重启','Restart') }}</el-button></template></el-table-column></el-table>
+            <p class="cfg-footnote">{{ t('服务名称、状态与开机启动均为示意；实际操作权限、影响及刷新结果由机端确认。','Service names, states and permissions are illustrative.') }}</p>
+          </template>
+          <template v-else><div class="cfg-card-list"><section v-for="group in currentGroups" :key="group.title" class="cfg-card"><div class="cfg-card-content"><div class="cfg-icon">{{ group.icon }}</div><div class="cfg-card-body"><div class="cfg-card-heading"><h3>{{ group.title }}</h3><p v-if="group.desc">{{ group.desc }}</p></div>
+            <div v-for="id in group.fields" :key="id" class="cfg-field" :class="{'cfg-field-solo':group.fields.length===1}"><div class="cfg-field-label"><strong v-if="group.fields.length>1">{{ fieldLabel(fields[id]) }}</strong><p v-if="fields[id].desc">{{ fields[id].desc }}</p></div><div class="cfg-control">
+              <el-select v-if="fields[id].kind==='select'" :model-value="m.values[id]" :placeholder="t('请选择','Choose a value')" @change="change(fields[id],$event)"><el-option v-for="o in fields[id].options" :key="o.value" :label="t(o.zh,o.en)" :value="o.value"></el-option></el-select>
+              <el-radio-group v-else-if="fields[id].kind==='radio'" :model-value="m.values[id]" @change="change(fields[id],$event)"><el-radio-button v-for="o in fields[id].options" :key="o.value" :value="o.value">{{ t(o.zh,o.en) }}</el-radio-button></el-radio-group>
+              <el-switch v-else-if="fields[id].kind==='switch'" :model-value="m.values[id]" @change="change(fields[id],$event)"></el-switch>
+              <el-input v-else-if="fields[id].kind==='number'||fields[id].kind==='ip'" :model-value="m.values[id]" :placeholder="t('请输入','Enter a value')" @change="change(fields[id],$event)"><template v-if="fields[id].unit" #append>{{ fields[id].unit }}</template></el-input>
+              <div v-else-if="fields[id].kind==='file'" class="cfg-file-control"><span class="cfg-file-name">{{ m.values[id]||t('尚未选择文件','No file selected') }}</span><label class="el-button el-button--default el-button--small"><span>{{ t('上传','Upload') }}</span><input type="file" style="display:none" @change="fileChange(fields[id],$event)"></label><el-button v-if="id==='scenarioFile'" size="small" @click="downloadDemo">{{ t('下载','Download') }}</el-button></div>
+              <span v-else class="cfg-pending">{{ t('待确认','To be confirmed') }}</span>
+            </div><small v-if="fields[id].hint" class="cfg-field-hint">{{ fields[id].hint }}</small></div>
+            <div v-if="group.tip" class="cfg-tip">ⓘ &nbsp;{{ group.tip }}</div>
+          </div></div></section></div>
+          <footer class="cfg-footer"><span>{{ dirtyCount ? t('已修改 '+dirtyCount+' 项模拟配置','Changed '+dirtyCount+' simulated settings') : t('示例配置；实际值待获取','Example values; actual values unavailable') }}</span><div class="cfg-footer-actions"><el-button @click="resetDefaults">{{ t('恢复默认','Restore defaults') }}</el-button><el-button type="primary" :disabled="!dirtyCount" @click="save">{{ t('模拟保存','Simulate save') }}</el-button></div></footer>
+          <div class="cfg-next-actions"><el-button size="small" :disabled="!m.hasSaved" @click="restart">{{ t('模拟重启相关服务','Simulate service restart') }}</el-button><el-button size="small" :disabled="!m.hasRestarted" @click="readActual">{{ t('重新读取实际值','Read actual values') }}</el-button><span>{{ t('保存 → 重启相关服务 → 重新读取并确认生效','Save → restart → read back and confirm') }}</span></div>
+          </template>
+        </main>
+      </div></el-config-provider>`
   };
-
-  function mount(container, options = {}) {
-    if (!container) return;
-    language = options.lang === "en" ? "en" : "zh";
-    if (!window.Vue || !window.ElementPlus) {
-      container.textContent = "Element Plus 资源未加载，请检查本地 assets 目录。";
-      return;
-    }
-    if (view && host?.isConnected && host.parentElement === container) { state().lang = language; return; }
-    unmount();
-    state().lang = language;
-    container.innerHTML = '<div id="configurationElementPlusMount"></div>';
-    host = container.firstElementChild;
-    app = Vue.createApp(ConfigView);
-    app.use(ElementPlus);
-    view = app.mount(host);
-  }
-  function unmount() { if (app) app.unmount(); app = null; view = null; host = null; }
-  function setLanguage(lang) { language = lang === "en" ? "en" : "zh"; if (model) model.lang = language; }
-  function resetSession() { if (model) Object.assign(model, initialState()); }
-  window.AstraConfigUI = { mount, unmount, setLanguage, resetSession };
+  function mount(container,options={}){if(!container)return;language=options.lang==="en"?"en":"zh";if(!window.Vue||!window.ElementPlus){container.textContent="Element Plus 资源未加载，请检查本地 assets 目录。";return;}if(view&&host?.isConnected&&host.parentElement===container){state().lang=language;return;}unmount();state().lang=language;container.innerHTML='<div id="configurationElementPlusMount"></div>';host=container.firstElementChild;app=Vue.createApp(ConfigView);app.use(ElementPlus);view=app.mount(host);}
+  function unmount(){if(app)app.unmount();app=null;view=null;host=null;}
+  function setLanguage(lang){language=lang==="en"?"en":"zh";if(model)model.lang=language;}
+  function resetSession(){if(model)Object.assign(model,initialState());}
+  window.AstraConfigUI={mount,unmount,setLanguage,resetSession};
 })();
 
 </script>
@@ -3793,11 +3491,11 @@ const navActive=Vue.computed(()=>S.page==="tool"&&S.current?"tool:"+S.current:S.
 const activeToolName=Vue.computed(()=>{const tool=TOOLS.find(item=>item.id===S.current);return tool?tr(tool.zh,tool.en):"—"});
 const batteryLabel=Vue.computed(()=>S.battery===0?"78%":S.battery===1?"20% · "+tr("低电量","Low"):"20% · "+tr("低电量 · 充电中","Low · Charging"));
 const toolBoundaryText=Vue.computed(()=>{
- if(S.current==="viz")return tr("原型边界：三维场景、二维卡片和断流状态均为示意；未连接真实机器人。工作区调整仅保留在当前页面，关闭或刷新后恢复默认。工作台负责工具入口和外层关闭。","Prototype boundary: the 3D scene, 2D cards and outage states are illustrations. No robot is connected. Workspace changes last only in this page and reset after closing or refreshing. Workbench owns the entry and outer close action.");
+ if(S.current==="viz")return tr("原型边界：三维场景、二维卡片和断流状态均为示意；未连接真实机器人。工作区调整仅保留在当前页面，停用工具或刷新后恢复默认。工作台负责工具入口和启停。","Prototype boundary: the 3D scene, 2D cards and outage states are illustrations. No robot is connected. Workspace changes last only in this page and reset after disabling the tool or refreshing. Workbench owns the tool entry and enablement.");
  if(S.current==="teach")return tr("原型边界：关节执行与底盘摇杆只演示交互，不发送动作；关闭页面不能证明机器人已停稳。","Prototype boundary: joint execution and the base joystick illustrate interactions only. They send no command; closing the page cannot confirm a robot has stopped.");
  if(S.current==="config")return tr("原型边界：系统配置只演示交互，不连接机器人或服务；配置项、权限和生效方式待确认。","Prototype boundary: system configuration is a demonstration only and does not connect to a robot or service. Items, permissions, and adoption remain to be confirmed.");
  if(S.current==="diagnostics")return tr("原型边界：系统诊断只模拟故障检查、日志和恢复交互；不读取机器人数据、不发送指令。实际范围、权限与接口待确认。","Prototype boundary: diagnostics simulates checks, logs and recovery only; it does not read a robot or send commands. Scope, permissions and interfaces remain to be confirmed.");
- return tr("原型边界：此区域承载工具所属团队提供的业务页面。关闭工具由工作台负责；停用入口不代表后台业务任务已停止。","Prototype boundary: this area hosts a tool-owned page. Workbench owns Close tool; disabling the entry does not necessarily stop background tasks.");
+ return tr("原型边界：此区域承载工具所属团队提供的业务页面。工具启停由工作台管理；停用入口不代表后台业务任务已停止。","Prototype boundary: this area hosts a tool-owned page. Workbench manages tool enablement; disabling the entry does not necessarily stop background tasks.");
 });
 function toolsForTab(tab){return TOOLS.filter(tool=>Boolean(S.enabled[tool.id])===(tab==="on"))}
 function toolTabLabel(tab){return (tab==="on"?tr("已启动","Started"):tr("未启动","Not started"))+" ("+toolsForTab(tab).length+")"}
@@ -4403,6 +4101,7 @@ init();
   document.addEventListener('keydown',e=>{if(e.key==='Escape' && isOpen){if(mode==='tour')pause();showPanel(false);}});
   render();showPanel(true);
 })();
+
 
 
 </script>
